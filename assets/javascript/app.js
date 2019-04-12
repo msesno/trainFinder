@@ -77,11 +77,11 @@ database.ref("/trains").on("child_added", function(snapshot) {
 
     // append to our table of trains, inside tbody, with a new row of the train data
     $("#table-data").prepend(
-        "<tr><td>" + snapshot.val().name + "</td>" +
-        "<td>" + snapshot.val().destination + "</td>" +
-        "<td>" + frequency + "</td>" +
-        "<td>" + minutesTillArrival + "</td>" +
-        "<td>" + nextTrainTime + "</td></tr>"
+        "<tr><td><p>" + snapshot.val().name + "</p></td>" +
+        "<td><p>" + snapshot.val().destination + "</p></td>" +
+        "<td><p>" + frequency + "</p></td>" +
+        "<td><p>" + minutesTillArrival + "</p></td>" +
+        "<td><p>" + nextTrainTime + "</p></td></tr>"
     );
 
 });
@@ -129,15 +129,3 @@ $("#btn-add").on("click", function(event) {
     }
 });
 
-// Calls storeInputs function if enter key is clicked
-$('form').on("keypress", function(event) {
-    if (event.which === 13) {
-        // form validation - if empty - alert
-        if (elTrain.val().length === 0 || elTrainDestination.val().length === 0 || elTrainTime.val().length === 0 || elTimeFreq === 0) {
-            alert("Please Fill All Required Fields");
-        } else {
-            // if form is filled out, run function
-            storeInputs(event);
-        }
-    }
-});

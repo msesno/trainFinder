@@ -4,7 +4,7 @@
 
 #head {
     text-align: center;
-    background-color: #9e482d;
+    background-color: #bb654b;
     color: white;
 }
 
@@ -31,12 +31,42 @@
 }
 
 .panel-custom {
-    background-color: #9e482d !important;
+    background-color: #bb654b !important;
     color: white !important;
+}
+
+h1 {
+    font-family: 'Lora';
+}
+
+h2 {
+    font-family: 'Lora';
+}
+
+h3 {
+    font-family: 'Lora';
+}
+
+h4 {
+    font-family: 'Thasadith';
+    
+}
+
+h5 {
+    font-family: 'Thasadith';
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Thasadith';
 }
 
 body {
     background-color: rgb(217, 246, 255);
+}
+
+tbody {
+    padding-left: 10px;
 }
 
 table {
@@ -59,11 +89,12 @@ td{
 }
 
 
-
-
+.headrow {
+    font-size: 32px;
+}
 
 
 .form-control:focus {
-    border-color: #9e482d;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #9e482d;
+    border-color: #bb654b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #bb654b;
 }
